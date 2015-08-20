@@ -12,8 +12,33 @@
     <link rel="stylesheet" href="css/OmniScriptReview.css" />
 </head>
 
-<body class="vlocity" ng-controller="omniScriptReviewCtrl">
+<body class="vlocity" ng-controller="baseCtrl as baseCtrl">
     <div class="outer-container">
+        <h1><strong>Individual:</strong></h1>
+        <table class="table" ng-repeat="(group_key,group_value) in individual" ng-if="group_value !== null && baseCtrl.excludeValues(this,group_key,group_value)">
+            <thead>
+                <tr>
+                    <th colspan="2">{{group_key}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="(key,value) in group_value track by $index" ng-if="value !== null && baseCtrl.isObject(group_value) && baseCtrl.excludeValues(this,key,value)">
+                    <td>{{key}}</td>
+                    <td ng-if="!baseCtrl.isObject(value)">{{value}}</td>
+                    <td ng-if="baseCtrl.isObject(value)">
+                        <div ng-repeat="(k, v) in value" ng-if="v !== null">
+                            <span>{{k}}: </span><span>{{v}}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr ng-if="!baseCtrl.isObject(group_value)">
+                    <td>{{group_key}}</td>
+                    <td>{{group_value}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1><strong>Medical Advantage 2:</strong></h1>
         
     </div>
 </body>
