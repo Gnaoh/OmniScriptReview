@@ -10,6 +10,12 @@
     $light-gray: #f2f2f2;
     $lightest-gray: #f8f8f8;
 
+    $black: #000;
+    $black-90: lighten($black, 10%);
+    $black-80: lighten($black, 20%);
+
+    $black-50: lighten($black, 50%);
+
     $dark-blue: #008ab3;
     $light-blue: #05a6df;
 

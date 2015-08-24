@@ -14,7 +14,7 @@ bpModule.directive("transformSupplemental", function($timeout) {
     };
 });
 // From http://www.bennadel.com/blog/2421-creating-angularjs-controllers-with-instance-methods.htm
-function baseCtrl($scope) {
+function customRedirectCtrl($scope) {
     $scope.bpTree = {
         "skipElements": [
             "ContextId",
@@ -22,10 +22,161 @@ function baseCtrl($scope) {
             "userName",
             "userProfile",
             "vlcPersistentComponent",
-            "plan",
             "error",
             "QuoteEnroll"
-        ]
+        ],
+        "userCurrencyCode": "GBP",
+        "labelMap": {
+            "DataRaptor Extract Action 1": null,
+            "Enrollee Info": "Enrollee Information",
+            "DataRaptor Extract Action 2": null,
+            "Calculation Action 1": null,
+            "Plan Selection": "Plan Selection",
+            "finalize_quote": "Finalize Quote",
+            "Save Quote": "Save Qute",
+            "SaveSession": "Save Session",
+            "Done Action 1": "Done Action 1",
+            "Basic_Info": "Basic Information about yourself",
+            "DataRaptor Extract Action 3": "DataRaptor Extract Action 3",
+            "Enrollee_Information_2": "Enrollee Information",
+            "Medicare_info": "Medicare Information",
+            "Eligibility_info_2": "Information about your enrollment eligibility",
+            "Addl_health": "Additional Health and Insurance Information",
+            "Prem_payment": "Premium Payment, Application Assistance",
+            "application_assistance": "Application Assistance",
+            "Review Action 1": "Review Action 1",
+            "Submit": "Review your information",
+            "Ei_tb": null,
+            "Year": "Year",
+            "State": "State",
+            "County_1": "County",
+            "Plan_text": null,
+            "output2": "Selectable Items 1",
+            "quote_or_enroll": "How would you like to Proceed?",
+            "ah_tb_1": null,
+            "ah_rb_1": "Do you have end-stage renal disease (ESRD)?",
+            "ah_rb_1.1": "Were you terminated from the previous plan due to a service area reduction, contract termination, non-renewal, or are you currently enrolled in a health plan (such as a commercial or group health plan, or a Medicaid plan)?",
+            "ah_tb_2": null,
+            "ah_tb_3": null,
+            "ah_rb_2": "Will you have other prescription drug coverage in addition to our plan?",
+            "ah_txt_2": "What is the name of the insurance company?",
+            "ah_txt_2.1": "May I have the ID number?",
+            "ah_txt_2.2": "May I have the Group Number?",
+            "ah_rb_3": "Are you a resident in a long-term care facility, such as a nursing home?",
+            "ah_txt_3": "Name of institution?",
+            "ah_txt_3.1": "Phone number of institution?",
+            "ah_txt_3.2": "Address of Institution (Number and Street?)",
+            "ah_rb_4": "Are you enrolled in your State Medicaid program?",
+            "ah_txt_4": "Please provide your Medicaid number?",
+            "ah_rb_5": "“Do you or your spouse work?”",
+            "Pcp_block": "Primary Care Physician (PCP)",
+            "Medicare_image": "<img src=\"http://www.medicareinteractive.org/images/medicarecard.jpg\" alt=\"bad image\">",
+            "Medicare_claim_no": "Medicare Claim Number",
+            "Part_a_date": "Part A Effective Date",
+            "Part_b_date": "Part B Effective Date",
+            "Alt_format_block": "Alternate Format of Information",
+            "prem_payment_blk_1": null,
+            "prem_payment_blk_2": null,
+            "billing_method": "How would you like to pay your monthly plan premium? Your options are to receive a bill or Automatic deduction from your monthly social security check” or through an Electronic Funds Transfer (EFT)",
+            "eft_disc": null,
+            "auto_ded_disc": null,
+            "bill_radio": "Would you like to hear about how people with limited incomes may qualify for Extra Help to pay for their prescription drugs?",
+            "billing_disc": null,
+            "Prem_payment_disc": null,
+            "Text_block_1": null,
+            "new_to_medicare": null,
+            "moved_out_of_area": null,
+            "date_move_out_of_area": "Please enter date moved",
+            "plan_to_move_outside_area": null,
+            "state_helps_pay_premiums": null,
+            "extra_help_drugs": null,
+            "no_longer_eligible_drugs": null,
+            "date_no_longer_eligible": "Please enter date you were no longer eligible",
+            "move_out_of_long_term_care": null,
+            "date_moved_out_of_long_term_care": "Please enter date moved out of long term care.",
+            "left_pace": null,
+            "date_left_pace": "Please enter date you left the program.",
+            "lost_drug_coverage": null,
+            "date_lost_drug_coverage": "Please enter date you lost your prescription coverage.",
+            "leaving_union_employee": null,
+            "date_leaving_union_employee": "Please enter date leaving coverage.",
+            "pharmacy_assistance": null,
+            "return_us": null,
+            "date_return_us": "Please enter return date.",
+            "plan_ending_contract": null,
+            "no_statement_applies": null,
+            "no_statement_apply_text": null,
+            "Enroll_period_info": "Enrollment Period Information",
+            "Perm_residence_info": "Permanent Residence Information",
+            "Mailing_add": "Mailing Address Information",
+            "basic_info_text": null,
+            "Contact_Information": "Contact Information",
+            "Communication Preferences": "Communication Preferences",
+            "q_prefix": "Prefix",
+            "q_first_name": "First Name",
+            "q_mi": "MI",
+            "q_last_name": "Last Name",
+            "q_street_add_1": "Street Address",
+            "q_street_add_2": "APT",
+            "q_city": "City",
+            "q_state": "State",
+            "q_zip_code": "Zip Code",
+            "q_email_1": "Email",
+            "q_addl_email": "Additional Email Information",
+            "Instructions": "Your Quote has been saved. <br> <br>By Clicking the 'Save this Quote Session For Later Use' link below you will be able to resume the Session in the future.",
+            "app_assistance_blk": null,
+            "app_assistance_rb": "Please select one of the following",
+            "Sales_Rep": "Sales Representative or Agent Full Name",
+            "Agent_Code": "Please enter Agent Code",
+            "legal_rep_disc": null,
+            "Disclosure_1": null,
+            "Agreement_1": "Do you agree with these statements?",
+            "Text Block 32": null,
+            "beneficiary_agreement": null,
+            "third_party_agreement": null,
+            "Radio 15": null,
+            "any_questions": null,
+            "Agree_to_terms": "Electronic Signature",
+            "medicare_disc": "Release of Information",
+            "Post to Object Action 1": "Submit Application",
+            "mailing_perm": "Is your mailing Address the same as your permanent address?",
+            "mailing_blk": null,
+            "p_street_add_1": "Street Address 1",
+            "p_street_add_2": "Street Address 2",
+            "p_zipcode": "ZIP Code",
+            "filler_blk_1": null,
+            "p_city": "City",
+            "p_state": "State",
+            "p_county": "County",
+            "Alt_format": "If you require information in an alternate format, please select one of the options below. We will contact you to determine how to best meet your needs.",
+            "Coverage_date": null,
+            "Effective_date": "Requested Effective Date of Harvard Pilgrim Stride (HMO) coverage",
+            "First Name": "First Name",
+            "Middle Initial": "Middle Init.",
+            "Last Name": "Last Name",
+            "Gender": "Gender",
+            "Birth_Date": "Birth Date",
+            "Home_Phone": "Home Phone",
+            "Alt_phone": "Alternate Phone Number",
+            "Email": "Email Address",
+            "Phone_contact": "May Harvard Pilgrim Health Care contact you by phone?",
+            "Conf_email": "Would you like to receive a confirmation email about this application?",
+            "pcp_tb": null,
+            "psp_id": "PCP ID #",
+            "pcp_name": "PCP Name",
+            "current_patient": "Are you currently a patient of this physician?",
+            "PCPButton": "Select PCP:",
+            "m_street_add_1": "Mailing Address 1",
+            "m_steet_add_2": "Mailing Address 2",
+            "m_zipcode": "ZIP Code",
+            "filer_blk_2": null,
+            "m_city": "City",
+            "m_state": "State",
+            "m_county": "County",
+            "value": "value",
+            "size": "size",
+            "filename": "filename"
+        }
     };
     $scope.medicare_supplemental = {
         "ContextId": "",
@@ -50,7 +201,7 @@ function baseCtrl($scope) {
             "Part B Eff Date- Mass": "2015-08-06T05:00:00.000Z"
         },
         "Enrollment Reason_NH": {
-            "Enrollment Reason - NH": "Initial Open Enrollment",
+            "Enrollment Reason - NH": null,
             "Part B Eff Date- NH": null,
             "DOB - NH": null,
             "Date Disenrollment - NH": null,
@@ -1214,10 +1365,10 @@ function baseCtrl($scope) {
         }
     };
 
-    baseCtrl.prototype.$scope = $scope;
+    customRedirectCtrl.prototype.$scope = $scope;
 }
 
-baseCtrl.prototype.excludeValues = function(scp,key,value) { 
+customRedirectCtrl.prototype.excludeValues = function(scp,key,value) { 
     var blacklist = scp.bpTree.skipElements;   
     if(typeof value === 'object') {
         var shown = false;
@@ -1244,11 +1395,62 @@ baseCtrl.prototype.excludeValues = function(scp,key,value) {
     }
 };
 
-baseCtrl.prototype.isObject = function(value) {
+customRedirectCtrl.prototype.isObject = function(value) {
     if(typeof value === 'object') {
         return true;
     }
     return false;
 };
 
-bpModule.controller("baseCtrl", baseCtrl);
+customRedirectCtrl.prototype.isArray = function(value) {
+    if(value && value.constructor === Array) {
+        return true;
+    }
+    return false;
+};
+
+customRedirectCtrl.prototype.outputCurrencySymbol = function(code) {
+    return getCurrencySymbol(code);
+};
+
+customRedirectCtrl.prototype.getRevisedResponse = function(response) {
+    delete response.plan;
+    return true;
+};
+
+customRedirectCtrl.prototype.getReviewLabel = function(scp,key) {
+    var label = scp.bpTree.labelMap[key];
+    if(label) {
+        return label;
+    }
+    return key;
+};
+
+// Global Currency Map and function to convert currencyCode to proper currencySymbol
+var currencyMap = [{
+    "USD": "$"
+}, {
+    "CAD": "$"
+}, {
+    "EUR": "€"
+}, {
+    "GBP": "£"
+}, {
+    "JPY": "¥"
+}, {
+    "KRW": "₩"
+}, {
+    "CNY": "元"
+}];
+
+function getCurrencySymbol(code) {
+    var currencySymbol = "";
+    currencyMap.forEach(function(item) {
+        if (item[code] !== undefined) {
+            currencySymbol = item[code];
+        }
+    });
+    return currencySymbol;
+};
+
+bpModule.controller("customRedirectCtrl", customRedirectCtrl);

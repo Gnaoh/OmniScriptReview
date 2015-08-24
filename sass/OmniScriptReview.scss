@@ -1,3 +1,62 @@
 @import "variables";
 @import "mixins/clearfix";
 
+.vlocity.hphc.review-page {
+    table.table {
+        border-color: $middle-light-gray;
+        table-layout: auto;
+        &> thead {
+            &> tr {
+                &> th {
+                    border-color: $middle-light-gray;
+                    font-weight: bold;
+                    color: $text-gray;
+                    font-size: 11px;
+                    letter-spacing: 0.05em;
+                    padding: 6px 12px;
+                }
+            }
+        }
+        &> tbody {
+            &> tr {
+                &:nth-of-type(even) {
+                    background-color: white;
+                }
+                &:hover {
+                    cursor: default;
+                    background-color: inherit;
+                }
+
+                &> td {
+                    overflow: visible;
+                    text-overflow: clip;
+                    white-space: normal;
+                    //word-break: break-all;
+                    border-color: $middle-light-gray;
+                    padding: 6px 12px;
+                    color: $dark-gray;
+
+                    span, strong {
+                        color: $dark-gray;                        
+                    }
+
+                    &.key {
+                        width: 250px;
+                        max-width: 250px;
+                        color: #1489AD;
+                    }
+                    &.value {
+                        span {
+                            &.inner-key {
+                                display: inline-block;
+                                min-width: 100px;
+                                // font-weight: bold;
+                                color: lighten($dark-gray, 25%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

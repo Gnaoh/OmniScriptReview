@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "",
-"sources": [],
-"names": [],
-"file": "OmniScriptReview.css"
-}
+{"version":3,"sources":["../sass/OmniScriptReview.scss","../sass/_variables.scss","OmniScriptReview.css"],"names":[],"mappings":"AAII,sCACI,qBCGuB,ADFvB,iBAAkB,CEFzB,AFKe,kDACI,qBCFW,ADGX,gBAAiB,AACjB,cCPG,ADQH,eAAe,AACf,qBAAsB,AACtB,gBAAiB,CEHpC,AFSe,iEACI,sBAAuB,CEP1C,AFSe,qDACI,eAAe,AACf,wBAAyB,CEP5C,AFUe,kDACI,iBAAiB,AACjB,mBAAmB,AACnB,mBAAmB,AAEnB,qBC1BW,AD2BX,iBAAiB,AACjB,aChCG,CCuBtB,AFWmB,gHACI,aCnCD,CC0BtB,AFYmB,sDACI,YAAY,AACZ,gBAAgB,AAChB,aAAc,CEVrC,AFc2B,uEACI,qBAAqB,AACrB,gBAAgB,AAEhB,aAA+B,CEb9D","file":"OmniScriptReview.css"}

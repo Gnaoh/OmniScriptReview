@@ -12,34 +12,32 @@
     <link rel="stylesheet" href="css/OmniScriptReview.css" />
 </head>
 
-<body class="vlocity" ng-controller="baseCtrl as baseCtrl">
-    <div class="outer-container">
-        <h1><strong>Individual:</strong></h1>
-        <table class="table" ng-repeat="(group_key,group_value) in individual" ng-if="group_value !== null && baseCtrl.excludeValues(this,group_key,group_value)">
-            <thead>
-                <tr>
-                    <th colspan="2">{{group_key}}</th>
-                </tr>
-            </thead>
+<body ng-controller="customRedirectCtrl as redirectCtrl">
+    <div class="vlocity hphc review-page outer-container">
+        <!-- medicare_supplemental, medicare_advantage, individual -->
+        <div ng-if="redirectCtrl.getRevisedResponse(medicare_advantage)"></div>
+        <table class="table" ng-repeat="(group_key,group_value) in medicare_advantage" ng-if="group_value !== null && redirectCtrl.excludeValues(this,group_key,group_value)">
+            <thead><tr><th colspan="2">{{group_key}}</th></tr></thead>
             <tbody>
-                <tr ng-repeat="(key,value) in group_value track by $index" ng-if="value !== null && baseCtrl.isObject(group_value) && baseCtrl.excludeValues(this,key,value)">
-                    <td>{{key}}</td>
-                    <td ng-if="!baseCtrl.isObject(value)">{{value}}</td>
-                    <td ng-if="baseCtrl.isObject(value)">
-                        <div ng-repeat="(k, v) in value" ng-if="v !== null">
-                            <span>{{k}}: </span><span>{{v}}</span>
+                <tr ng-repeat="(key,value) in group_value track by $index" ng-if="value !== null && redirectCtrl.isObject(group_value) && redirectCtrl.excludeValues(this,key,value)">
+                    <td class="key" ng-if="key !== 'output2'">{{redirectCtrl.getReviewLabel(this,key)}}</td>
+                    <td class="key" ng-if="key === 'output2'">{{group_key}}</td>
+                    <td class="value" ng-if="!redirectCtrl.isObject(value)">{{value}}</td>
+                    <td class="value" ng-if="redirectCtrl.isObject(value)">
+                        <div ng-repeat="(k, v) in value" ng-if="!redirectCtrl.isArray(value) && v !== null && key !== 'output2'">
+                            <span class="inner-key">{{k}}: </span><span class="inner-value">{{v}}</span>
+                        </div>
+                        <div ng-if="redirectCtrl.isArray(value) && key === 'output2'">
+                            <span>{{value[0].calculationResults[0].ProductName}}, {{redirectCtrl.outputCurrencySymbol(this.bpTree.userCurrencyCode)}}{{value[0].aggregationResults.TotalPrice}}</span>
                         </div>
                     </td>
                 </tr>
-                <tr ng-if="!baseCtrl.isObject(group_value)">
-                    <td>{{group_key}}</td>
-                    <td>{{group_value}}</td>
+                <tr ng-if="!redirectCtrl.isObject(group_value)">
+                    <td class="key">{{group_key}}</td>
+                    <td class="value">{{group_value}}</td>
                 </tr>
             </tbody>
         </table>
-
-        <h1><strong>Medical Advantage 2:</strong></h1>
-        
     </div>
 </body>
 
