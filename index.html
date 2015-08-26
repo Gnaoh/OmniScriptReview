@@ -14,18 +14,18 @@
 
 <body ng-controller="customRedirectCtrl as redirectCtrl">
     <div class="vlocity hphc review-page outer-container">
-        <!-- medicare_supplemental, medicare_advantage, individual -->
+        <!-- medicare_supplemental, medicare_advantage, individual, test_json -->
         <div ng-if="redirectCtrl.getRevisedResponse(medicare_advantage)"></div>
         <table class="table" ng-repeat="(group_key,group_value) in medicare_advantage" ng-if="group_value !== null && redirectCtrl.excludeValues(this,group_key,group_value)">
-            <thead><tr><th colspan="2">{{group_key}}</th></tr></thead>
+            <thead><tr><th colspan="2">{{redirectCtrl.getReviewLabel(this,group_key)}}</th></tr></thead>
             <tbody>
                 <tr ng-repeat="(key,value) in group_value track by $index" ng-if="value !== null && redirectCtrl.isObject(group_value) && redirectCtrl.excludeValues(this,key,value)">
                     <td class="key" ng-if="key !== 'output2'">{{redirectCtrl.getReviewLabel(this,key)}}</td>
-                    <td class="key" ng-if="key === 'output2'">{{group_key}}</td>
-                    <td class="value" ng-if="!redirectCtrl.isObject(value)">{{value}}</td>
+                    <td class="key" ng-if="key === 'output2'">{{redirectCtrl.getReviewLabel(this,group_key)}}</td>
+                    <td class="value" ng-if="!redirectCtrl.isObject(value)">{{redirectCtrl.formatValue(key,value)}}</td>
                     <td class="value" ng-if="redirectCtrl.isObject(value)">
                         <div ng-repeat="(k, v) in value" ng-if="!redirectCtrl.isArray(value) && v !== null && key !== 'output2'">
-                            <span class="inner-key">{{k}}: </span><span class="inner-value">{{v}}</span>
+                            <span class="inner-key">{{redirectCtrl.getReviewLabel(this,k)}}: </span><span class="inner-value">{{redirectCtrl.formatValue(k,v)}}</span>
                         </div>
                         <div ng-if="redirectCtrl.isArray(value) && key === 'output2'">
                             <span>{{value[0].calculationResults[0].ProductName}}, {{redirectCtrl.outputCurrencySymbol(this.bpTree.userCurrencyCode)}}{{value[0].aggregationResults.TotalPrice}}</span>
@@ -33,8 +33,8 @@
                     </td>
                 </tr>
                 <tr ng-if="!redirectCtrl.isObject(group_value)">
-                    <td class="key">{{group_key}}</td>
-                    <td class="value">{{group_value}}</td>
+                    <td class="key">{{redirectCtrl.getReviewLabel(this,group_key)}}</td>
+                    <td class="value">{{redirectCtrl.formatValue(group_key,group_value)}}</td>
                 </tr>
             </tbody>
         </table>

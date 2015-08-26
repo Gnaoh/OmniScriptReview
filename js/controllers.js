@@ -1653,6 +1653,19 @@ customRedirectCtrl.prototype.getReviewLabel = function(scp,key) {
     return key;
 };
 
+customRedirectCtrl.prototype.formatValue = function(key,value) {
+    // Create map of possible key strings to identify a date
+    var dateStrs = ["date","year","month"];
+    // Loop through map and format the value if key has substring in map
+    for(var i = 0; i < dateStrs.length; i++) {
+        if(key.toLowerCase().indexOf(dateStrs[i]) > -1) {
+            var date = new Date(value);
+            return date.toLocaleDateString();
+        }
+    }
+    return value;
+};
+
 // Global Currency Map and function to convert currencyCode to proper currencySymbol
 var currencyMap = [{
     "USD": "$"
