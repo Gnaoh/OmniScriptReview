@@ -1365,6 +1365,233 @@ function customRedirectCtrl($scope) {
         }
     };
 
+    $scope.test_json = {
+        "ContextId": "",
+        "timeStamp": "2015-08-25T22:40:01.168Z",
+        "userName": "jbridges@vlocity.com.dev",
+        "userProfile": "System Administrator",
+        "vlcPersistentComponent": {},
+        "Enrollee Info": {
+            "Year": "2015",
+            "State": "MA",
+            "County_1": "Bristol"
+        },
+        "plan": [{
+            "productcode": "MDCRSCMA",
+            "name": "Medicare Supplemental Core Plan",
+            "ProductId": "01t55000000FImSAAW",
+            "features": [{
+                "name": "Inpatient Hospital Coverage",
+                "value": "• Days 1-60: $1,260 Part A Deductible • Days 61-90: $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Skilled Nursing Facility",
+                "value": "• Days 1-20: $0 • Days 21-100: $157.50 per day coinsurance",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Emergency Room Care",
+                "value": "• $0 After Part B Deductible",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Primary Care and Specialist Visits",
+                "value": "• $0 After Part B Deductible",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Preventive Care Services - As covered by Medicare",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Annual Wellness Exam",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Outpatient Service / Surgery",
+                "value": "• $0 After Part B Deductible",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Diagnostic Procedures, Tests and Lab Services",
+                "value": "• $0 After Part B Deductible",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Emergency Care Nationwide and In a Foreign Country",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Fitness Reimbursement",
+                "value": "Up to $150 reimbursement for health club membership annually",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }]
+        }, {
+            "productcode": "MDCRS1MA",
+            "name": "Medicare Supplement 1 Plan",
+            "ProductId": "01t55000000FImcAAG",
+            "features": [{
+                "name": "Inpatient Hospital Coverage",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Skilled Nursing Facility",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Emergency Room Care",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Primary Care and Specialist Visits",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Preventive Care Services - As covered by Medicare",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Annual Wellness Exam",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Outpatient Service / Surgery",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Diagnostic Procedures, Tests and Lab Services",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Emergency Care Nationwide and In a Foreign Country",
+                "value": "• $0",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }, {
+                "name": "Fitness Reimbursement",
+                "value": "Up to $150 reimbursement for health club membership annually",
+                "categoryName": "Key Benefits",
+                "dataType": "Text",
+                "description": "KEY",
+                "attributeDisplaySequence": "1"
+            }]
+        }],
+        "error": "OK",
+        "Plan Selection": {
+            "output2": null,
+            "quote_or_enroll": "EN"
+        },
+        "Eligibility_info_2": {
+            "new_to_medicare": false,
+            "moved_out_of_area": false,
+            "date_move_out_of_area": null,
+            "plan_to_move_outside_area": false,
+            "state_helps_pay_premiums": false,
+            "extra_help_drugs": false,
+            "no_longer_eligible_drugs": false,
+            "date_no_longer_eligible": null,
+            "move_out_of_long_term_care": false,
+            "date_moved_out_of_long_term_care": null,
+            "left_pace": false,
+            "date_left_pace": null,
+            "lost_drug_coverage": false,
+            "date_lost_drug_coverage": null,
+            "leaving_union_employee": false,
+            "date_leaving_union_employee": null,
+            "pharmacy_assistance": false,
+            "return_us": false,
+            "plan_ending_contract": false,
+            "date_return_us": null,
+            "no_statement_applies": false,
+            "Enroll_period_info": null
+        },
+        "Submit": {
+            "Agreement_1": null,
+            "agreement_yes_no": null,
+            "Agree_to_terms": false
+        },
+        "Basic_Info": {
+            "Contact_Information": {
+                "First_Name": "Jun",
+                "Middle_Initial": null,
+                "Last_Name": "Gao",
+                "Gender": "Female",
+                "Birth_Date": null,
+                "Home_Phone": null,
+                "Alt_phone": null,
+                "Email": null
+            },
+            "Communication Preferences": null
+        },
+        "Enrollee_Information_2": {
+            "Perm_residence_info": {
+                "p_street_add_1": null,
+                "p_street_add_2": null,
+                "p_zipcode": null,
+                "p_city": null,
+                "p_state": null,
+                "p_county": "Bristol"
+            },
+            "Mailing_add": null
+        },
+        "application_assistance": {
+            "app_assistance_rb": "Myself",
+            "Sales_Rep": null,
+            "Agent_Code": null
+        }
+    };
+
     customRedirectCtrl.prototype.$scope = $scope;
 }
 
