@@ -1592,6 +1592,345 @@ function customRedirectCtrl($scope) {
         }
     };
 
+    $scope.mailing_address = {
+        "ContextId": "00655000002RUmG",
+        "timeStamp": "2015-08-27T00:11:52.134Z",
+        "userName": "gpardo@vlocity.com.dev",
+        "userProfile": "System Administrator",
+        "vlcPersistentComponent": {},
+        "Enrollee Info": {
+            "Year": "2015",
+            "State": "ME",
+            "County_1": "Cumberland"
+        },
+        "Plan Selection": {
+            "output2": [{
+                "ProductName": "Stride Value Rx Plus (HMO)",
+                "Product_Code": "STRRXPLUSME",
+                "State": "ME",
+                "ProductId": "01t55000000FIoYAAW",
+                "attributes": [{
+                    "name": "Annual Medical Deductible",
+                    "value": "$150 yearly deductible",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "1"
+                }, {
+                    "name": "Primary Care Provider (PCP) Office Visit",
+                    "value": "$0 copay per visit",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "2"
+                }, {
+                    "name": "Specialist Office Visit",
+                    "value": "$40 copay per visit",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "3"
+                }, {
+                    "name": "Diagnostic Tests, X-Rays, Lab Services",
+                    "value": "$10 copay for X-Rays $0 copay for lab services 20% coinsurance for MRI/CT scans",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "4"
+                }, {
+                    "name": "Outpatient Surgery",
+                    "value": "$200 copay",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "5"
+                }, {
+                    "name": "Inpatient Hospital Care (includes Substance Abuse and Rehabilitation Services)",
+                    "value": "Days 1-6, $265 copay each day",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "6"
+                }, {
+                    "name": "Skilled Nursing Facility (in a Medicare Certified Skilled Nursing Facility)",
+                    "value": "Days 1-20, $0 copay per day Days 21-100,  $125 copay per day",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "7"
+                }, {
+                    "name": "Home Health Care",
+                    "value": "$0 copay",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "8"
+                }, {
+                    "name": "Ambulance",
+                    "value": "$250 copay per trip",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "9"
+                }, {
+                    "name": "Worldwide Emergency Coverage",
+                    "value": "$65 copay (waived if admitted within 3 days)",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "description": "KEY",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "9"
+                }, {
+                    "name": "Routine Eye Exam",
+                    "value": "$15 copay, 1 visit per year",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "10"
+                }, {
+                    "name": "Eyewear Benefit",
+                    "value": "$150 annual allowance for eyewear",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "11"
+                }, {
+                    "name": "Routine Hearing Exam",
+                    "value": "$15 copay, 1 visit per year",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "12"
+                }, {
+                    "name": "Fitness Benefit",
+                    "value": "Up to $150 yearly Fitness club reimbursement",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "13"
+                }, {
+                    "name": "Over-the-Counter Allowance",
+                    "value": "$25 per month allowance towards over-the-counter health care related supplies",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "14"
+                }, {
+                    "name": "Out-of-Pocket Limit",
+                    "value": "$5,000 yearly out-of-pocket  limit",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "15"
+                }, {
+                    "name": "Durable Medical Equipment",
+                    "value": "20% coinsurance",
+                    "categoryName": "Medicare Key Benefits",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "1",
+                    "attributeDisplaySequence": "16"
+                }, {
+                    "name": "Annual Prescription Drug Deductible",
+                    "value": "$0",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "1"
+                }, {
+                    "name": "Initial Coverage:",
+                    "value": "After your yearly deductible, you pay the following  until your total yearly drug costs reach $2,960. Total yearly drug costs are the total drug costs paid by both you and Harvard Pilgrim",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "2"
+                }, {
+                    "name": "Tier 1 Preferred Generic 30-Day Supply-Retail Pharmacy 90-Day Supply-Mail Order",
+                    "value": "$4 copay $8 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "3"
+                }, {
+                    "name": "Tier 2 Non Preferred Generic 30-Day Supply-Retail Pharmacy 90-Day Supply-Mail Or",
+                    "value": "$10 copay $20 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "4"
+                }, {
+                    "name": "Tier 3 Preferred Brand 30-Day Supply-Retail Pharmacy 90-Day Supply-Mail Order Ph",
+                    "value": "$45 copay $90 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "5"
+                }, {
+                    "name": "Tier 4 Non Preferred Brand 30-Day Supply-Retail Pharmacy 90-Day Supply-Mail Orde",
+                    "value": "$95 copay $190 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "6"
+                }, {
+                    "name": "Tier 5 Specialty",
+                    "value": "33% coinsurance",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "7"
+                }, {
+                    "name": "Coverage Gap",
+                    "value": "You pay the following until you have paid a total of $4,700* for covered Part D drugs",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "8"
+                }, {
+                    "name": "-Tier 1 Preferred Generic 30-Day Supply-Retail Pharmacy 90-Day Supply-Mail Order",
+                    "value": "$4 copay $8 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "9"
+                }, {
+                    "name": "-Tier 2 Non Preferred Generic 30-Day Supply-Retail Pharmacy 90-Day Supply-Mail O",
+                    "value": "$10 copay $20 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "10"
+                }, {
+                    "name": "-Tier 3 Preferred Brand Tier 4 Non Preferred Brand Tier 5 Specialty",
+                    "value": "Not Covered by StrideSM (HMO) in the Coverage Gap While you are in the coverage gap, the Medicare Coverage Gap Discount Program provides manufacturer discounts on brand name drugs.  You pay 45% of the negotiated price for brand name drugs plus a portion o",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "description": "",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "11"
+                }, {
+                    "name": "Catastrophic Coverage",
+                    "value": "You pay the following  for the remainder of the calendar year",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "description": "",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "12"
+                }, {
+                    "name": "Generic Drugs (including Brand Drugs treated as Generic)",
+                    "value": "Greater of 5% coinsurance or $2.65 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "description": "",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "13"
+                }, {
+                    "name": "All other Drugs",
+                    "value": "$6.60 copay",
+                    "categoryName": "Annual Prescription Drug Deductible",
+                    "dataType": "Text",
+                    "description": "",
+                    "categoryDisplaySequence": "2",
+                    "attributeDisplaySequence": "14"
+                }],
+                "MedicareAdvantageRates__TotalPrice": 58,
+                "ID": "1",
+                "vlcSelected": true,
+                "$$hashKey": "object:1605"
+            }],
+            "quote_or_enroll": "EN"
+        },
+        "error": "OK",
+        "Basic_Info": {
+            "Contact_Information": {
+                "First_Name": "John",
+                "Middle_Initial": null,
+                "Last_Name": "Smith",
+                "Gender": "Male",
+                "Birth_Date": "1970-01-16T08:00:00.000Z",
+                "Home_Phone": null,
+                "Alt_phone": null,
+                "Email": "gpardo@vlocity.com"
+            },
+            "Communication Preferences": {
+                "Phone_contact": "No",
+                "Conf_email": "No"
+            }
+        },
+        "Enrollee_Information_2": {
+            "Perm_residence_info": {
+                "p_street_add_1": "1 Main St.",
+                "p_street_add_2": null,
+                "p_zipcode": "04053",
+                "p_city": "Merepoint",
+                "p_state": "ME",
+                "p_county": "Cumberland"
+            },
+            "Mailing_add": {
+                "mailing_perm": "No",
+                "mailing_blk": {
+                    "m_street_add_1": "123 Other Street",
+                    "m_steet_add_2": "Apt 123",
+                    "m_zipcode": "04053",
+                    "m_city": "Merepoint",
+                    "m_state": "ME",
+                    "m_county": "Cumberland"
+                }
+            }
+        },
+        "Eligibility_info_2": {
+            "new_to_medicare": false,
+            "moved_out_of_area": false,
+            "date_move_out_of_area": null,
+            "plan_to_move_outside_area": false,
+            "state_helps_pay_premiums": false,
+            "extra_help_drugs": false,
+            "no_longer_eligible_drugs": false,
+            "date_no_longer_eligible": null,
+            "move_out_of_long_term_care": false,
+            "date_moved_out_of_long_term_care": null,
+            "left_pace": false,
+            "date_left_pace": null,
+            "lost_drug_coverage": false,
+            "date_lost_drug_coverage": null,
+            "leaving_union_employee": false,
+            "date_leaving_union_employee": null,
+            "pharmacy_assistance": false,
+            "return_us": false,
+            "plan_ending_contract": false,
+            "date_return_us": null,
+            "no_statement_applies": false,
+            "Enroll_period_info": null
+        },
+        "Submit": {
+            "Agreement_1": null,
+            "application_source": null,
+            "date_processed": null,
+            "agreement_yes_no": null,
+            "Agree_to_terms": false
+        },
+        "q_email_1": "gpardo@vlocity.com",
+        "q_zip_code": "04053",
+        "q_state": "ME",
+        "q_city": "Merepoint",
+        "q_street_add_1": "1 Main St.",
+        "q_last_name": "Smith",
+        "q_first_name": "John",
+        "application_assistance": {
+            "app_assistance_rb": "Myself",
+            "Sales_Rep": null,
+            "Agent_Code": null
+        }
+    };
+
     customRedirectCtrl.prototype.$scope = $scope;
 }
 
