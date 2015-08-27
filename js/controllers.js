@@ -1646,8 +1646,20 @@ customRedirectCtrl.prototype.getRevisedResponse = function(response) {
 };
 
 customRedirectCtrl.prototype.getReviewLabel = function(scp,key) {
-    var label = scp.bpTree.labelMap[key];
-    if(label) {
+    // Add or remove labels here that do not appear in the Omniscript Label Map:
+    var customLabelMap = {
+        "Checkbox_1": "Checkbox Number 1",
+        "Checkbox_2": "Checkbox Number 2",
+        "Text_2": "Text Element Number 2",
+        "Medicare_info": "Medicare Information Custom"
+    };
+    var label = scp.bpTree.labelMap[key],
+        customLabel = customLabelMap[key];
+    // If the key exists in both the Omniscript labelMap and the customLabelMap, 
+    // customLabelMap will take precedence:
+    if(customLabel) {
+        return customLabel;
+    }else if(label) {
         return label;
     }
     return key;
