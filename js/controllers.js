@@ -1675,6 +1675,12 @@ customRedirectCtrl.prototype.formatValue = function(key,value) {
             return date.toLocaleDateString();
         }
     }
+    if(value == true) {
+        return "Yes";
+    }
+    if(value == false) {
+        return "No";
+    }
     return value;
 };
 
