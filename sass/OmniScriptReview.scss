@@ -5,6 +5,10 @@
     table.table {
         border-color: $middle-light-gray;
         table-layout: auto;
+
+        * {
+            font-family: Arial, sans-serif;
+        }
         &> thead {
             &> tr {
                 &> th {
@@ -47,12 +51,18 @@
                     }
                     &.value {
                         span {
-                            &.inner-key {
+                            &.inner-key, &.inner-inner-key {
                                 display: inline-block;
                                 min-width: 100px;
                                 // font-weight: bold;
                                 color: lighten($dark-gray, 25%);
+                                margin-right: 7px;
                             }
+                        }
+                        .inner-value.is-object {
+                            padding: 3px 0 3px 10px;
+                            margin: 10px 0 10px 10px;
+                            border-left: 1px solid lighten($dark-gray, 35%);
                         }
                     }
                 }

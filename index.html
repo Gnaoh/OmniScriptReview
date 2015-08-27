@@ -14,9 +14,9 @@
 
 <body ng-controller="customRedirectCtrl as redirectCtrl">
     <div class="vlocity hphc review-page outer-container">
-        <!-- medicare_supplemental, medicare_advantage, individual, test_json -->
-        <div ng-if="redirectCtrl.getRevisedResponse(medicare_advantage)"></div>
-        <table class="table" ng-repeat="(group_key,group_value) in medicare_advantage" ng-if="group_value !== null && redirectCtrl.excludeValues(this,group_key,group_value)">
+        <!-- medicare_supplemental, medicare_advantage, individual, test_json, mailing_address -->
+        <div ng-if="redirectCtrl.getRevisedResponse(mailing_address)"></div>
+        <table class="table" ng-repeat="(group_key,group_value) in mailing_address" ng-if="group_value !== null && redirectCtrl.excludeValues(this,group_key,group_value)">
             <thead><tr><th colspan="2">{{redirectCtrl.getReviewLabel(this,group_key)}}</th></tr></thead>
             <tbody>
                 <tr ng-repeat="(key,value) in group_value track by $index" ng-if="value !== null && redirectCtrl.isObject(group_value) && redirectCtrl.excludeValues(this,key,value)">
@@ -25,7 +25,14 @@
                     <td class="value" ng-if="!redirectCtrl.isObject(value)">{{redirectCtrl.formatValue(key,value)}}</td>
                     <td class="value" ng-if="redirectCtrl.isObject(value)">
                         <div ng-repeat="(k, v) in value" ng-if="!redirectCtrl.isArray(value) && v !== null && key !== 'output2'">
-                            <span class="inner-key">{{redirectCtrl.getReviewLabel(this,k)}}: </span><span class="inner-value">{{redirectCtrl.formatValue(k,v)}}</span>
+                            <span class="inner-key">{{redirectCtrl.getReviewLabel(this,k)}}: </span>
+                            <span ng-if="!redirectCtrl.isObject(v)" class="inner-value">{{redirectCtrl.formatValue(k,v)}}</span>
+                            <div ng-if="redirectCtrl.isObject(v)" class="inner-value is-object">
+                                <div ng-repeat="(k_3, v_3) in v" ng-if="!redirectCtrl.isArray(v) && v_3 !== null && k !== 'output2'">
+                                    <span class="inner-inner-key">{{redirectCtrl.getReviewLabel(this,k_3)}}: </span>
+                                    <span class="inner-inner-value">{{redirectCtrl.formatValue(k,v_3)}}</span>
+                                </div>
+                            </div>
                         </div>
                         <div ng-if="redirectCtrl.isArray(value) && key === 'output2'">
                             <span>{{value[0].calculationResults[0].ProductName}}, {{redirectCtrl.outputCurrencySymbol(this.bpTree.userCurrencyCode)}}{{value[0].aggregationResults.TotalPrice}}</span>
