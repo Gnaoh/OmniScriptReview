@@ -2710,11 +2710,40 @@ customRedirectCtrl.prototype.formatValue = function(key,value) {
             return date.toLocaleDateString();
         }
     }
+    // Create map of possible key strings to identify a phone
+    var phoneStrs = ["phone","telephone"],
+        phoneCharObj = {0:'(',3:') ',6:'-'};
+    // Loop through map and format the value if key has substring in map
+    for(var i = 0; i < phoneStrs.length; i++) {
+        if(key.toLowerCase().indexOf(phoneStrs[i]) > -1 && value.charAt(0) !== "(") {
+            value = this.formatMasker(key,value,phoneCharObj);
+        }
+    }
+    // Create map of possible key strings to identify a SSN
+    var ssnStrs = ["ssn","social security"],
+        ssnCharObj = {3:'-',5:'-'};
+    // Loop through map and format the value if key has substring in map
+    for(var i = 0; i < ssnStrs.length; i++) {
+        if(key.toLowerCase().indexOf(ssnStrs[i]) > -1 && value.charAt(3) !== "-") {
+            value = this.formatMasker(key,value,ssnCharObj);
+        }
+    }
     if(value == true) {
         return "Yes";
     }
     if(value == false) {
         return "No";
+    }
+    return value;
+};
+
+// Helper method to format strings based on a character object (using for phone & ssn)
+customRedirectCtrl.prototype.formatMasker = function(key,value,charObj) {
+    var numbers = value.replace(/\D/g, ''),
+        character = charObj;
+    value = '';
+    for (var i = 0; i < numbers.length; i++) {
+        value += (character[i]||'') + numbers[i];
     }
     return value;
 };
