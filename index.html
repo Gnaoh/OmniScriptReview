@@ -14,9 +14,9 @@
 
 <body ng-controller="customRedirectCtrl as redirectCtrl">
     <div class="vlocity hphc review-page outer-container">
-        <!-- medicare_supplemental, medicare_advantage, individual, test_json, mailing_address -->
-        <div ng-if="redirectCtrl.getRevisedResponse(mailing_address)"></div>
-        <table class="table" ng-repeat="(group_key,group_value) in mailing_address" ng-if="group_value !== null && redirectCtrl.excludeValues(this,group_key,group_value)">
+        <!-- medicare_supplemental, medicare_advantage, individual, test_json, mailing_address, two_dependents -->
+        <div ng-if="redirectCtrl.getRevisedResponse(two_dependents)"></div>
+        <table class="table" ng-repeat="(group_key,group_value) in two_dependents" ng-if="group_value !== null && redirectCtrl.excludeValues(this,group_key,group_value)">
             <thead><tr><th colspan="2">{{redirectCtrl.getReviewLabel(this,group_key)}}</th></tr></thead>
             <tbody>
                 <tr ng-repeat="(key,value) in group_value track by $index" ng-if="value !== null && redirectCtrl.isObject(group_value) && redirectCtrl.excludeValues(this,key,value)">
