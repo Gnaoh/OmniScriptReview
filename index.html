@@ -34,6 +34,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div ng-repeat="(k, v) in value" ng-if="redirectCtrl.isArray(value) && key !== 'output2'">
+                            <span ng-if="!redirectCtrl.isObject(v)" class="inner-value">{{redirectCtrl.formatValue(k,v)}}</span>
+                            <div ng-if="redirectCtrl.isObject(v)" class="inner-value is-object">
+                                <div ng-repeat="(k_3, v_3) in v" ng-if="v_3 !== null && k !== 'output2'">
+                                    <span class="inner-inner-key">{{redirectCtrl.getReviewLabel(this,k_3)}}: </span>
+                                    <span class="inner-inner-value">{{redirectCtrl.formatValue(k_3,v_3)}}</span>
+                                </div>
+                            </div>
+                        </div>
                         <div ng-if="redirectCtrl.isArray(value) && key === 'output2'">
                             <span>{{value[0].calculationResults[0].ProductName}}, {{redirectCtrl.outputCurrencySymbol(this.bpTree.userCurrencyCode)}}{{value[0].aggregationResults.TotalPrice}}</span>
                         </div>

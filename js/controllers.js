@@ -1931,6 +1931,702 @@ function customRedirectCtrl($scope) {
         }
     };
 
+    $scope.two_dependents = {
+        "ContextId": "00655000002RUmG",
+        "timeStamp": "2015-08-28T22:00:00.178Z",
+        "userName": "gpardo@vlocity.com.dev",
+        "userProfile": "System Administrator",
+        "AccountId": "001550000059YbDAAU",
+        "qStreetAddress": "1 Main St.",
+        "qCityTown": "Merepoint",
+        "qLastName": "Smith2",
+        "qFirstName": "John",
+        "qPrefix": "Mr.",
+        "vlcPersistentComponent": {},
+        "MinInfo": {
+            "MinDOB": "1969-12-27T08:00:00.000Z",
+            "RequestedCoverageEffectiveDate": "9/5/2015",
+            "MinZipCode": "03601",
+            "MinState": "NH",
+            "MinTobaccoUse": "No",
+            "DependentCoverage": "Yes",
+            "MinAge": 45
+        },
+        "vlcValidationErrors": {},
+        "error": "OK",
+        "AddDependent": {
+            "DependentList": [{
+                "DependentDOB": "2015-08-11T07:00:00.000Z",
+                "Relationship": "Child Dependent - 03",
+                "qDependentTobaccoUse": "No",
+                "DependentAge": 0
+            }, {
+                "DependentDOB": "2010-08-11T07:00:00.000Z",
+                "Relationship": "Child Dependent - 03",
+                "qDependentTobaccoUse": "No",
+                "DependentAge": 5
+            }]
+        },
+        "SelectCoverage": {
+            "output2": [{
+                "calculationResults": [{
+                    "attributes": [{
+                        "value": "InNetwork: Family=$6600 per person | $13200 per group, Individual=$6,600",
+                        "name": "Combined Medical and Drug EHB Deductible",
+                        "description": "OutofNetwork: Family=$6600 per person | $13200 per group, Individual=$6600 per person | $13200 per group",
+                        "dataType": "Text",
+                        "categoryName": "Deductible",
+                        "categoryDisplaySequence": 2500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=$6600 per person | $13200 per group, Individual=$6,600",
+                        "name": "Combined Medical and Drug EHB Deductible",
+                        "description": "OutofNetwork: Family=$6600 per person | $13200 per group, Individual=$6600 per person | $13200 per group",
+                        "dataType": "Text",
+                        "categoryName": "Deductible",
+                        "categoryDisplaySequence": 2500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Drug EHB Deductible",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Deductible",
+                        "categoryDisplaySequence": 2500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Drug EHB Deductible",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Deductible",
+                        "categoryDisplaySequence": 2500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Medical EHB Deductible",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Deductible",
+                        "categoryDisplaySequence": 2500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Medical EHB Deductible",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Deductible",
+                        "categoryDisplaySequence": 2500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Maximum Out of Pocket for Drug EHB Benef",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Maximum Out of Pocket Expenses",
+                        "categoryDisplaySequence": 3200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Maximum Out of Pocket for Drug EHB Benef",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Maximum Out of Pocket Expenses",
+                        "categoryDisplaySequence": 3200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=$6850 per person | $13700 per group, Individual=$6,850",
+                        "name": "Maximum Out of Pocket for Medical and Dr",
+                        "description": "OutofNetwork: Family=$6850 per person | $13700 per group, Individual=$6850 per person | $13700 per group",
+                        "dataType": "Text",
+                        "categoryName": "Maximum Out of Pocket Expenses",
+                        "categoryDisplaySequence": 3200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=$6850 per person | $13700 per group, Individual=$6,850",
+                        "name": "Maximum Out of Pocket for Medical and Dr",
+                        "description": "OutofNetwork: Family=$6850 per person | $13700 per group, Individual=$6850 per person | $13700 per group",
+                        "dataType": "Text",
+                        "categoryName": "Maximum Out of Pocket Expenses",
+                        "categoryDisplaySequence": 3200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Maximum Out of Pocket for Medical EHB Be",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Maximum Out of Pocket Expenses",
+                        "categoryDisplaySequence": 3200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Family=per person Not Applicable | per group Not Applicable,",
+                        "name": "Maximum Out of Pocket for Medical EHB Be",
+                        "description": "OutofNetwork: Family=per person Not Applicable | per group Not Applicable, Individual=per person Not Applicable | per group Not Applicable",
+                        "dataType": "Text",
+                        "categoryName": "Maximum Out of Pocket Expenses",
+                        "categoryDisplaySequence": 3200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Primary Care Visit to Treat an Injury or",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Office Visit",
+                        "categoryDisplaySequence": 3300,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Primary Care Visit to Treat an Injury or",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Office Visit",
+                        "categoryDisplaySequence": 3300,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $90 Copay after deductible,",
+                        "name": "Specialist Visit",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Office Visit",
+                        "categoryDisplaySequence": 3300,
+                        "attributeDisplaySequence": 2
+                    }, {
+                        "value": "InNetwork: $90 Copay after deductible,",
+                        "name": "Specialist Visit",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Office Visit",
+                        "categoryDisplaySequence": 3300,
+                        "attributeDisplaySequence": 2
+                    }, {
+                        "value": "InNetwork: $90 Copay after deductible,",
+                        "name": "Urgent Care Centers or Facilities",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Office Visit",
+                        "categoryDisplaySequence": 3300,
+                        "attributeDisplaySequence": 3
+                    }, {
+                        "value": "InNetwork: $90 Copay after deductible,",
+                        "name": "Urgent Care Centers or Facilities",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Office Visit",
+                        "categoryDisplaySequence": 3300,
+                        "attributeDisplaySequence": 3
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Inpatient Hospital Services (e.g., Hospi",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Inpatient Hospital Services (e.g., Hospi",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Inpatient Physician and Surgical Service",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Inpatient Physician and Surgical Service",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Delivery and All Inpatient Services for",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 3
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Delivery and All Inpatient Services for",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 3
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Skilled Nursing Facility",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 4
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Skilled Nursing Facility",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Inpatient",
+                        "categoryDisplaySequence": 3500,
+                        "attributeDisplaySequence": 4
+                    }, {
+                        "value": "InNetwork: $300 Copay after deductible,",
+                        "name": "Emergency Room Services",
+                        "description": "OutofNetwork: $300 Copay after deductible,",
+                        "dataType": "Text",
+                        "categoryName": "Emergency Medical Care",
+                        "categoryDisplaySequence": 3600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $300 Copay after deductible,",
+                        "name": "Emergency Room Services",
+                        "description": "OutofNetwork: $300 Copay after deductible,",
+                        "dataType": "Text",
+                        "categoryName": "Emergency Medical Care",
+                        "categoryDisplaySequence": 3600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Emergency Transportation/Ambulance",
+                        "description": "OutofNetwork: 50% Coinsurance after deductible",
+                        "dataType": "Text",
+                        "categoryName": "Emergency Medical Care",
+                        "categoryDisplaySequence": 3600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Emergency Transportation/Ambulance",
+                        "description": "OutofNetwork: 50% Coinsurance after deductible",
+                        "dataType": "Text",
+                        "categoryName": "Emergency Medical Care",
+                        "categoryDisplaySequence": 3600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Acupuncture",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Acupuncture",
+                        "categoryDisplaySequence": 3700,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Acupuncture",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Acupuncture",
+                        "categoryDisplaySequence": 3700,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Chiropractic Care",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Chiropractic Care",
+                        "categoryDisplaySequence": 3800,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Chiropractic Care",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Chiropractic Care",
+                        "categoryDisplaySequence": 3800,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Outpatient Facility Fee (e.g.,  Ambulato",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Surgery",
+                        "categoryDisplaySequence": 3900,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Outpatient Facility Fee (e.g.,  Ambulato",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Surgery",
+                        "categoryDisplaySequence": 3900,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Outpatient Surgery Physician/Surgical Se",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Surgery",
+                        "categoryDisplaySequence": 3900,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Outpatient Surgery Physician/Surgical Se",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Surgery",
+                        "categoryDisplaySequence": 3900,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Rehabilitative Occupational and Rehabili",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Rehabilitation Services",
+                        "categoryDisplaySequence": 4000,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Rehabilitative Occupational and Rehabili",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Rehabilitation Services",
+                        "categoryDisplaySequence": 4000,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Rehabilitative Speech Therapy",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Rehabilitation Services",
+                        "categoryDisplaySequence": 4000,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Rehabilitative Speech Therapy",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Outpatient Rehabilitation Services",
+                        "categoryDisplaySequence": 4000,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Laboratory Outpatient and Professional S",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Lab",
+                        "categoryDisplaySequence": 4100,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Laboratory Outpatient and Professional S",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Lab",
+                        "categoryDisplaySequence": 4100,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "X-rays and Diagnostic Imaging",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "X-Ray",
+                        "categoryDisplaySequence": 4200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "X-rays and Diagnostic Imaging",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "X-Ray",
+                        "categoryDisplaySequence": 4200,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Imaging (CT/PET Scans, MRIs)",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Advanced Imaging (CT/PET Scans, MRIs)",
+                        "categoryDisplaySequence": 4300,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Imaging (CT/PET Scans, MRIs)",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Advanced Imaging (CT/PET Scans, MRIs)",
+                        "categoryDisplaySequence": 4300,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge, Coinsurance=No Charge",
+                        "name": "Prenatal and Postnatal Care",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Preventive Services",
+                        "categoryDisplaySequence": 4400,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge, Coinsurance=No Charge",
+                        "name": "Prenatal and Postnatal Care",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Preventive Services",
+                        "categoryDisplaySequence": 4400,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge, Coinsurance=No Charge",
+                        "name": "Preventive Care/Screening/Immunization",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Preventive Services",
+                        "categoryDisplaySequence": 4400,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge, Coinsurance=No Charge",
+                        "name": "Preventive Care/Screening/Immunization",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Preventive Services",
+                        "categoryDisplaySequence": 4400,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Routine Eye Exam for Children",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Vision",
+                        "categoryDisplaySequence": 4500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Routine Eye Exam for Children",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Vision",
+                        "categoryDisplaySequence": 4500,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Routine Eye Exam (Adult)",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Vision",
+                        "categoryDisplaySequence": 4500,
+                        "attributeDisplaySequence": 5
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Routine Eye Exam (Adult)",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Vision",
+                        "categoryDisplaySequence": 4500,
+                        "attributeDisplaySequence": 5
+                    }, {
+                        "value": "InNetwork: Copay=No Charge after deductible, Coinsurance=No Charge after deductible",
+                        "name": "Mental/Behavioral Health Inpatient Servi",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge after deductible, Coinsurance=No Charge after deductible",
+                        "name": "Mental/Behavioral Health Inpatient Servi",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Mental/Behavioral Health Outpatient Serv",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Mental/Behavioral Health Outpatient Serv",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge after deductible, Coinsurance=No Charge after deductible",
+                        "name": "Substance Abuse Disorder Inpatient Servi",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 2
+                    }, {
+                        "value": "InNetwork: Copay=No Charge after deductible, Coinsurance=No Charge after deductible",
+                        "name": "Substance Abuse Disorder Inpatient Servi",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 2
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Substance Abuse Disorder Outpatient Serv",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 4
+                    }, {
+                        "value": "InNetwork: $30 Copay after deductible,",
+                        "name": "Substance Abuse Disorder Outpatient Serv",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Behavioral Health",
+                        "categoryDisplaySequence": 4600,
+                        "attributeDisplaySequence": 4
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Durable Medical Equipment",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Durable Medical Equipment",
+                        "categoryDisplaySequence": 4700,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: 50% Coinsurance after deductible",
+                        "name": "Durable Medical Equipment",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Durable Medical Equipment",
+                        "categoryDisplaySequence": 4700,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge after deductible, Coinsurance=No Charge after deductible",
+                        "name": "Hospice Services",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Hospice Services",
+                        "categoryDisplaySequence": 4800,
+                        "attributeDisplaySequence": 1
+                    }, {
+                        "value": "InNetwork: Copay=No Charge after deductible, Coinsurance=No Charge after deductible",
+                        "name": "Hospice Services",
+                        "description": "OutofNetwork: Coinsurance=100%",
+                        "dataType": "Text",
+                        "categoryName": "Hospice Services",
+                        "categoryDisplaySequence": 4800,
+                        "attributeDisplaySequence": 1
+                    }],
+                    "Favorites": "Yes",
+                    "ProductSubType": "HMO",
+                    "SOB_Link": "https://www.harvardpilgrim.org/pls/portal/portal.get_sob?pSOURCE=SALESFORCE&pCODE=0X8zcSncBOmx&pMD=&pSTART=20150828",
+                    "SBC_Link": "https://www.harvardpilgrim.org/pls/portal/portal.get_sbc?pSOURCE=SALESFORCE&pCODE=0X8zcSncBOmx&pMD=&pRX=&pDENTAL=&pVISION=&pSTART=20150828",
+                    "ProductType": "Medical",
+                    "Dental": "No",
+                    "NetworkName": "ElevateHealth Network",
+                    "LevelCoverage": "Bronze",
+                    "MarketSegment": "Individual",
+                    "ProductName": "ElevateHealth Bronze HMO",
+                    "Age": 45,
+                    "DOB": "1969-12-27T08:00:00.000Z",
+                    "Tobacco": "No",
+                    "ZipCode": "03601",
+                    "PlanID": "59025NH0330012",
+                    "ProductId": "01t55000000FIkaAAG",
+                    "NewIndividualPlans__IndividualRate": 252.85,
+                    "RatingAreaLookup2__RatingAreaID": "Rating Area 1",
+                    "ID": "6"
+                }, {
+                    "Relationship": "Child Dependent - 03",
+                    "Age": 0,
+                    "DOB": "2015-08-11T07:00:00.000Z",
+                    "Tobacco": "No",
+                    "ZipCode": "03601",
+                    "PlanID": "59025NH0330012",
+                    "ProductId": "01t55000000FIkaAAG",
+                    "NewIndividualPlans__IndividualRate": 111.19,
+                    "RatingAreaLookup2__RatingAreaID": "Rating Area 1",
+                    "ID": "7"
+                }, {
+                    "Relationship": "Child Dependent - 03",
+                    "Age": 5,
+                    "DOB": "2010-08-11T07:00:00.000Z",
+                    "Tobacco": "No",
+                    "ZipCode": "03601",
+                    "PlanID": "59025NH0330012",
+                    "ProductId": "01t55000000FIkaAAG",
+                    "NewIndividualPlans__IndividualRate": 111.19,
+                    "RatingAreaLookup2__RatingAreaID": "Rating Area 1",
+                    "ID": "8"
+                }],
+                "aggregationResults": {
+                    "TotalPrice": 475.23
+                },
+                "shown": false,
+                "vlcSelected": true,
+                "$$hashKey": "object:2862"
+            }],
+            "QuoteEnroll": "Enroll Now"
+        },
+        "Application": {
+            "Prefix": "Mr.",
+            "FirstName": "John",
+            "MiddleName": null,
+            "LastName": "Smith2",
+            "SSN": "456789009",
+            "DateofBirthApplication": "1969-12-27T08:00:00.000Z",
+            "TobaccoUse": "No",
+            "Gender": "Male",
+            "StreetAddress": "1 Main St.",
+            "Apartment": null,
+            "CityTown": "Merepoint",
+            "StateApplication": "NH",
+            "ZipCodeApplication": "03601",
+            "MobilePhone": "(555) 555-5555",
+            "HomePhone": "5678900789",
+            "WorkTelephone": "5556666666",
+            "Email": null,
+            "Broker": null,
+            "VendorId": null,
+            "BrokerNPN": null,
+            "PCP": null
+        },
+        "ReviewTerms": {
+            "Disclosure": false
+        },
+        "CustInfo": {
+            "Beneficiary": {
+                "PDBlock": null,
+                "EmployerSponsoredQuestion": "No"
+            }
+        },
+        "AppDependentInformation": {
+            "CompleteDependentInfo": [{
+                "DependentFirstName": "asd",
+                "DependentLastName": "asd",
+                "DependentDateOfBirth": "2015-08-11T07:00:00.000Z",
+                "DependentRelationship": "Child Dependent - 03",
+                "DependentTobaccoUse": "No",
+                "DependentGender": "Female",
+                "DependentSSN": "555555555",
+                "DependentPCPInfo": null,
+                "$$hashKey": "object:2785"
+            }, {
+                "DependentFirstName": "asd",
+                "DependentLastName": "asdf",
+                "DependentDateOfBirth": "2010-08-11T07:00:00.000Z",
+                "DependentRelationship": "Child Dependent - 03",
+                "DependentTobaccoUse": "No",
+                "DependentGender": "Male",
+                "DependentSSN": "555555551",
+                "DependentPCPInfo": null,
+                "$$hashKey": "object:2786"
+            }]
+        },
+        "QuoteOptionCustomerInfo": {
+            "qZipCode": "03601",
+            "qState": "NH"
+        }
+    };
+
     customRedirectCtrl.prototype.$scope = $scope;
 }
 
