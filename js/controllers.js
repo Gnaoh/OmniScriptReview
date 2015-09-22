@@ -2006,7 +2006,7 @@ customRedirectCtrl.prototype.getReviewLabel = function(scp,key) {
 
 customRedirectCtrl.prototype.formatValue = function(key,value) {
     // Create map of possible key strings to identify a date
-    var dateStrs = ["date","year","month"];
+    var dateStrs = ["date","year","month","dob"];
     // Loop through map and format the value if key has substring in map
     for(var i = 0; i < dateStrs.length; i++) {
         if(key.toLowerCase().indexOf(dateStrs[i]) > -1) {
